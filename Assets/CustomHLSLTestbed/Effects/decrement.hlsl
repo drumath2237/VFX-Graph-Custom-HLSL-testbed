@@ -1,4 +1,5 @@
-int decrement(const in int val)
+void Rand3Position(inout VFXAttributes attributes, in float3 offset)
 {
-    return val - 1;
+    float3 rand = VFXRAND3;
+    attributes.position = rand + offset;
 }
